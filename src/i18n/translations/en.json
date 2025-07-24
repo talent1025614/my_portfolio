@@ -7,8 +7,9 @@
     "ancorContact": "Contact",
     "welcomeContent_altOfPhoto": "A white man with a beard and black hair, smiling and wearing a black winter cap with a headset in his ear",
     "welcomeContent_introductionHelloI'm": "Hello! I'm",
-    "welcomeContent_professionalTitle": "Web ",
-    "welcomeContent_professionalTitleSpan": "developer.",
+    "name": "Noboru Endo",
+    "welcomeContent_professionalTitle": "Full Stack ",
+    "welcomeContent_professionalTitleSpan": "Developer.",
     "welcomeContent_saluteSpan": "Welcome ",
     "welcomeContent_salute": "to my portfolio!",
     "welcomeContent_textButton": "COME ON WITH ME",
@@ -35,7 +36,7 @@
     "projectCard_repositoryButtonText": "Repository",
     "projectsData_descriptionFoodExplorer": "Application that simulates a restaurant menu, two personas can access it: an admin and a customer. The customer can view the menu, search for dishes, and see details of specific dishes. The admin, in addition to the same functions as the customer, can also manage it by adding new dishes and editing or deleting existing ones.",
     "projectsData_descriptionRocketNotes": "Application for the user to create notes and save them to their account, allowing searches by title or tags using the interactive menu. Additionally, they can also configure their profile by adding a custom user image. I worked with CRUD, authentication tokens, and password encryption.",
-    "projectsData_descriptionSPLabs": "Landing page created for a technical challenge. On it I had to develop a dynamic chat window connected to the API provided by the company, which simulates a virtual assistant and answers messages covering a group of commands, such as 'piada', 'comandos', 'teste', etc. Support for Portuguese only.",
+    "projectsData_descriptionSPLabs": "Landing page created for a technical challenge. On it I had to develop a dynamic chat window connected to the API provided by the company, which simulates a virtual assistant and answers messages covering a group of commands, such as 'piada', 'comandos', 'teste', etc. Support for guese only.",
     "projectsData_descriptionPokemonGallery": "A website that brings together 200 species of pokemon, 10 per page. I've also created a search box by name. Each card has the name of the pokemon and its type.",
     "projectsData_descriptionGitFav": "In this project the user can create a private list with favorite Github users, which will list the number of public repositories and their repositories and their followers, as well as their name and github id.",
     "projectsData_descriptionFocusTimer2.1": "Timer based on the pomodoro focus method. It starts with 25 minutes (by default). But the user can manipulate the time with the add and subtract buttons. There is also a dark mode button and four buttons with background sounds, simulating different environments, like rainy and a coffee shope.",
@@ -49,6 +50,7 @@
     "contactForm_alertWriteAValidEmailAddress": "Please, insert a valid e-mail address.",
     "contactForm_alertMsgSuccess": "Email sent successfully! Thanks for your contact, I will reply you as soon as possible.",
     "contactForm_alertMsgError": "An error occurred while trying to send the e-mail. Please, try again later.",
-    "footer_copyright_p2_text": "All rights reserved"
+    "footer_copyright_p2_text": "All rights reserved",
+    "publish": "© 2023 Noboru Endo"
   }
 }

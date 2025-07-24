@@ -1,5 +1,5 @@
 import './style.scss'
-import brFlag from "../../assets/br-flag.svg";
+import japanFlag from "../../assets/jp-flag.svg";
 import usaFlag from "../../assets/usa-flag.svg";
 import { useTranslation } from 'react-i18next';
 
@@ -7,9 +7,9 @@ export function LanguageSwitcher() {
 
   const languageOptions = [
     {
-      name: "POR",
-      value: "ptBR",
-      flag: brFlag
+      name: "日本語",
+      value: "ja",
+      flag: japanFlag
     },
     {
       name: "EN",

@@ -15,7 +15,7 @@ const {t} = useTranslation();
 
         <div className='footer__copyright'>
           <p className='footer__copyright_p1'>
-            © 2023 Thiago Koch Martins
+          {t("publish")}
           </p>
           <p className='footer__copyright_p2'>
             {t("footer_copyright_p2_text")}

@@ -23,11 +23,11 @@ export function WelcomeContent(props) {
           <div className='welcomeContent__textsContainer'>
 
             <h1 className='welcomeContent__introduction'>
-              {t("welcomeContent_introductionHelloI'm")} <span>Thiago,</span>
+              {t("welcomeContent_introductionHelloI'm")} <span>{t("name")} </span>
             </h1>
 
             <h1 className='welcomeContent__professionalTitle' 
-            style={{color: i18n.language === "ptBR" ? "#fff" : "#0CBAB4"}}>
+            style={{color: i18n.language === "jp" ? "#fff" : "#0CBAB4"}}>
               {t("welcomeContent_professionalTitle")}
               <span style={{color: i18n.language === "en" ? "#fff" : ""}}>
                 {t("welcomeContent_professionalTitleSpan")}

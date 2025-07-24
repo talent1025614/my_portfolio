@@ -19,7 +19,7 @@ export function EducationContent() {
             <h2 className='educationContent__course'>
               {information.course}
             </h2>
-            <p className='educationContent__level'>
+            <p className='tent__level'>
               {information.level}
             </p>
             <p className='educationContent__institution'>
