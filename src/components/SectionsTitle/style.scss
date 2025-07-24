@@ -1,0 +1,18 @@
+@import '../../styles/themes';
+
+.sectionsTitleStructure {
+  color: $light-300;
+  background-color: $green-100;
+  padding: 1.0rem 3.8rem;
+  border-radius: 2.5rem;
+  
+  display: flex;
+  justify-content: center;
+  
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  
+  @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+    padding: .6rem 1.2rem;
+  }
+}

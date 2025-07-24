@@ -1,0 +1,24 @@
+@import '../../styles/themes';
+
+.ancorStructure {
+  font-family: 'League Spartan', sans-serif;
+  color: $light-300;
+  font-weight: 500;
+  line-height: 2.05rem;
+  font-size: 2.4rem;
+  transition: all 0.5s ease-out;
+  
+  &:hover{
+    color: $green-100;
+    cursor: pointer;
+  }
+  
+  &--mobile {
+    font-size: clamp(2.5rem, 4vw, 3.2rem);
+    color: $light-300;
+    font-weight: 500;
+    line-height: 2.05rem;
+    border-bottom: 0.5px solid $light-100;
+    padding-bottom: clamp(1.0rem, 4vw, 2.0rem);
+  }
+}

@@ -1,0 +1,93 @@
+@import '../../styles/themes';
+
+.buttonStructure {
+  background-color: $green-200;
+  border: none;
+  border-radius: 25px;
+  color: $dark-100;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12.5px;
+  transition: all 0.5s ease-out;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 1.0rem;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green-300;
+  }
+
+  &--withArrow {
+
+    background-color: $green-200;
+    border: none;
+    border-radius: 25px;
+    color: $dark-100;
+
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12.5px;
+    transition: all 0.5s ease-out;
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 1.0rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    svg {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover {
+      background-color: $green-300;
+      svg {
+        transform: translateY(0.2rem);
+      }
+    }
+
+  }
+  
+  &--transparent {
+    background: none;
+    border: none;
+    outline: 1px solid $light-100;
+    border-radius: 25px;
+    color: $light-100;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    transition: all 1s ease-out;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 1.0rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: $green-300;
+      border: none;
+      outline: none;
+      color: $dark-100;
+    }
+  }
+}

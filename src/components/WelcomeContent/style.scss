@@ -1,0 +1,103 @@
+@import '../../styles/themes';
+
+/*ANIMATIONS*/
+
+
+.welcomeContent {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10.0rem;
+
+  @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, MD)) {
+    gap: 6.5rem;
+  }
+
+  .welcomeContent__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, MD)) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+      gap: 2.9rem;
+    }
+
+    .welcomeContent__myPhoto {
+      width: clamp(17.4rem, 50vw, 32.3rem);
+      animation: appear .5s 1s ease-in backwards;
+    }
+    
+    .welcomeContent__textsContainer {
+      color: $light-300;
+      display: flex;
+      flex-direction: column;
+      gap: 2.0rem;
+
+      @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+        gap:1.0rem;
+      }
+
+      .welcomeContent__introduction, .welcomeContent__professionalTitle {
+        font-size: clamp(3.0rem, 4.0rem , 5.2rem);
+        font-style: normal;
+        font-weight: 400;
+        
+        @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, LG)) {
+          font-size: clamp(2.2rem, 2.0rem + 2vw, 5.2rem);
+        }
+      }
+      
+      .welcomeContent__introduction {
+        animation: leftRightShort 1s  1s ease-in-out backwards;
+        
+        @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, LG)) {
+          animation: leftRightTall 1s  1s ease-in-out backwards;
+        }
+      }
+      .welcomeContent__professionalTitle {
+        animation: leftRightShort 1s  1.2s ease-in-out backwards;
+
+        @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, LG)) {
+          animation: leftRightTall 1s  1.2s ease-in-out backwards;
+        }
+      }
+      
+      .welcomeContent__salute {
+        font-size: clamp(1.8rem, 2.5rem, 2.8rem);
+        font-style: normal;
+        font-weight: 300;
+        animation: leftRightShort 1s  1.4s ease-in-out backwards;
+        
+        
+        @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, LG)) {
+          animation: leftRightTall 1s  1.4s ease-in-out backwards;
+        }
+        @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+          font-size: clamp(2.0rem, 4vw, 2.2rem);
+        }
+      }
+
+      span {
+        color: $green-200;
+      }
+    }
+  }
+
+  .socialMediaLinksStructure--toWelcome {
+    animation: appear 1s  2s ease-in-out backwards;
+  }
+  
+  .welcomeContent__actionButton {
+    width: clamp(25.4rem, 22.4rem + 10vw, 36.4rem);
+    height: 4.0rem;
+    animation: appear 1s  2s ease-in-out backwards;
+  }
+}

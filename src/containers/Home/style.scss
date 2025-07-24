@@ -1,0 +1,94 @@
+@import '../../styles/themes';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'League Spartan', sans-serif;;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.container__mobileMenu {
+  background-color: $green-100;
+}
+
+.container__main {
+  
+  
+  .container__welcomeSection {
+    background-color: $dark-200;
+    padding: 15.0rem 3.0rem;
+    
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+      padding: 12.0rem 3.0rem 9.0rem 3.0rem;
+    }
+  }
+  
+  .container__aboutSection {
+    background-color: $dark-300;
+
+    padding: 15.0rem 15.0rem;
+
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, MD)) {
+      padding: 10.0rem 3.0rem 10.0rem 3.0rem;
+    }
+  }
+
+  .container__knowledgeSection {
+    background-color: $dark-200;
+    
+    display: flex;
+    justify-content: center;
+    
+    padding: 12.0rem 15.0rem;
+    
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, MD)) {
+      padding: 10.0rem 3.0rem 10.0rem 3.0rem;
+    }
+  }
+  
+  .container__educationSection {
+    background-color: $dark-300;
+    display: flex;
+    justify-content: center;
+
+    padding: 15.0rem 15.0rem;
+
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, MD)) {
+      padding: 10.0rem 3.0rem 10.0rem 3.0rem;
+    }
+  }
+  
+  .container__projectsSection {
+    background-color: $dark-200;
+    display: flex;
+    justify-content: center;
+    
+    
+    padding: 15.0rem 15.0rem;
+    
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+      padding: 10.0rem 3.0rem 10.0rem 3.0rem;
+    }
+  }
+  
+  .container__contactSection {
+    background-color: $dark-300;
+    display: flex;
+    justify-content: center;
+    
+    padding: 15.0rem 15.0rem;
+    
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+      padding: 10.0rem 3.0rem 10.0rem 3.0rem;
+    }
+
+  }
+}

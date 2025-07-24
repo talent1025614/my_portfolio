@@ -1,0 +1,30 @@
+@import '../../styles/themes';
+
+.tecnologieTagStructure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $green-100;
+  color: $light-300;
+  border: none;
+  font-size: clamp(1.0rem, 4vw, 1.2rem);
+  font-weight: 400;
+  border-radius: 5px;
+  padding: .5rem 1.0rem;
+  transition: all 0.5s ease-out;
+  
+  &--green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green-300;
+    color: $dark-200;
+    font-size: clamp(1.0rem, 4vw, 1.2rem);
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 1.0rem;
+    transition: all 0.5s ease-out;
+
+  }
+}

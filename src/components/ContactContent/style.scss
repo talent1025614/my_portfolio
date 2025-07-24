@@ -1,0 +1,15 @@
+@import '../../styles/themes';
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.0rem; 
+  max-width: 101.4rem;
+}
+
+.contactContent__title {
+  color: $light-300;
+  font-size: clamp(2.0rem, 4vw, 3.2rem);
+  text-align: center;
+}

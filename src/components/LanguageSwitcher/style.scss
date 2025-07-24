@@ -1,0 +1,15 @@
+@import '../../styles/themes';
+
+.languageSwitcherStructure {
+  display: flex;
+  align-items: center;
+  gap: 1.0rem;
+}
+
+.languageSwitcherStructure__button {
+
+  background: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}

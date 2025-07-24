@@ -1,0 +1,52 @@
+@import '../../styles/themes';
+@import '../../styles/animations.scss';
+
+
+
+.navBarr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.0rem 5.0rem 2.0rem 7.0rem;
+  position: fixed;
+  background-color: $dark-300;
+  border-bottom: 0.5px solid $light-200;
+  width: 100%;
+  animation: topdown 2s;
+
+  @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, MD)) {
+    justify-content: center;
+    padding: 2.5rem 0;
+  }
+  
+  .navBarr__logo {
+    width: 9.8rem;
+    cursor: pointer;
+  }
+
+  .navBarr__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.0rem;
+    justify-self: end;
+  
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, MD)) {
+      display: none;
+    }
+  }
+  
+  .navBarr__openMenu {
+  
+    background: none;
+    border: none;
+    position: absolute;
+    right: 2.0rem;
+  
+    @media screen and (min-width: map-get($DEVICE_BREAKPOINTS, MD)) {
+      display: none;
+    }
+  }
+}
+

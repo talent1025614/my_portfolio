@@ -1,0 +1,105 @@
+@import "../../styles/themes";
+
+.socialMediaLinksStructure {
+  display: flex;
+  flex-direction: row;
+  gap: 1.7rem;
+  
+  @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+    gap: 1.4rem;
+  }
+  
+  .socialMediaLinksStructure__linkedIn, .socialMediaLinksStructure__instagram, .socialMediaLinksStructure__github {
+    cursor: pointer;
+    
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+      > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+      }
+    }
+    
+    &:hover {
+      > svg {
+        > path {
+          fill: $green-100;
+        }
+      }
+    }
+  }
+  
+  &--toFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+    
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+      gap: .6rem;
+    }
+    
+    .socialMediaLinksStructure__linkedIn, .socialMediaLinksStructure__instagram, .socialMediaLinksStructure__github {
+      cursor: pointer;
+      
+      > svg {
+        width: 3.4rem;
+        height: 3.4rem;
+      }
+      
+      @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+        > svg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+      
+      &:hover {
+        > svg {
+          > path {
+            fill: $green-100;
+          }
+        }
+      }
+    }
+    
+  }
+  
+  &--toWelcome {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+    
+    @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+      gap: .6rem;
+    }
+    
+    .socialMediaLinksStructure__linkedIn, .socialMediaLinksStructure__instagram, .socialMediaLinksStructure__github {
+      cursor: pointer;
+      
+      > svg {
+        width: 3.0rem;
+        height: 3.0rem;
+        
+        > path {
+          transition: all 0.5s ease-out;
+          fill: $light-200;
+        }
+      }
+    
+      @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+        > svg {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+      
+      &:hover {
+        > svg {
+          > path {
+            fill: $green-100;
+          }
+        }
+      }
+    }
+
+  }
+}

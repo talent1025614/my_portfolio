@@ -1,0 +1,43 @@
+@import '../../styles/themes';
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: clamb(4.4rem, 50vw, 10.2rem);
+  padding: 2.5rem 4.5rem;
+  border-top: 0.5px solid $light-200;
+  background-color: $dark-300;
+
+  @media screen and (max-width: map-get($DEVICE_BREAKPOINTS, SM)) {
+    padding: 1.1rem 2.0rem;
+  }
+}
+
+.footer__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  color: $light-200;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(.2rem, 1vw, .5rem);
+  > p {
+    font-size: clamp(.8rem, 3vw, 2.0rem);
+  }
+}
+
+.footer__logo {
+  display: none;
+  
+  @media screen and (min-width: map-get($DEVICE_BREAKPOINTS, LG)) {
+    display: block;
+    position: absolute;
+    right: 47%;
+    width: 8.0rem;
+  }
+}
